@@ -2,8 +2,8 @@
 
 class Frutas {
 
-    private $cor;
-    private $nome;
+    public $cor;
+    protected $nome;
     private $peso;
     
     public function __construct($nome,$cor) {
@@ -39,4 +39,7 @@ class Frutas {
         echo "A fruta é {$this->nome} e a cor é {$this->cor}";
     }
 
+    public function __destruct() {
+        echo "A fruta é {$this->nome} e a cor é {$this->cor}";
+    }
 }
